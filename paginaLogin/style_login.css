@@ -159,6 +159,8 @@ button{
 .overlay{
     position: relative;
     background-image: url(/Imagens/ed\ login.png) ;
+    background-size: cover;
+    background-position: center;
     color: #fff;
     left: -150%;
     height: 100%;
