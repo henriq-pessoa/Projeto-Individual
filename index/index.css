@@ -1,11 +1,11 @@
 @font-face {
     font-family: Rockinline;
-    src: url(/fonts/Rockinline.ttf);
+    src: url(../fonts/Rockinline.ttf);
 }
 
 @font-face {
     font-family: TokyoGeisha;
-    src: url(/fonts/TokyoGeishaDEMO-Regular.otf);
+    src: url(../fonts/TokyoGeishaDEMO-Regular.otf);
 }
 
 @keyframes logo {
@@ -14,7 +14,7 @@
     }
 
     100% {
-        opacity: 0.8;
+        opacity: 0.85;
     }
 
 
@@ -24,6 +24,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}*::-webkit-scrollbar {
+    display: none;
+  }
+
+.container{
+    
 }
 
 .nav {
@@ -86,8 +93,7 @@
     text-align: center;
     font-family: Rockinline;
     font-size: 50px;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    padding: 2%;
+    padding: 1%;
 }
 
 .home p {
@@ -100,9 +106,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.8;
-    animation: logo 2s;
-    margin: 2%;
+    opacity: 0.85;
+    animation: logo 5s;
+    margin: 1%;
 
 }
 
@@ -133,15 +139,10 @@
     height: 100%;
     width: 100%;
     background-color: #dd5353;
+
 }
 
-.charContent {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-}
+
 
 .characters h1 {
     font-family: TokyoGeisha;
@@ -168,17 +169,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 222;
+    z-index: 333;
     position: relative;
-    background-image: url(/Imagens/human\ transmut\ 2.png);
+    background-image: url(../Imagens/human\ transmut\ 2.png);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
+    
+    
 
 }
 
 .charBox img {
     z-index: 111;
+
+}
+
+.descChar{
+    text-align: start;
+    z-index: 222;
+    position: relative;
+    margin-left:0;
+    font-size: 30px;
+    font-family: TokyoGeisha;
 }
 
 .charText {
@@ -186,7 +199,7 @@
     text-align: center;
     color: #fff;
     width: 100%;
-    bottom: 20%;
+    bottom: 10%;
     position: absolute;
     z-index: 222;
 }
@@ -198,3 +211,41 @@
     margin: 3%;
 }
 
+.charBtn{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 716px;
+    height: 140px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0);
+    
+}
+
+.cBtn{
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    width: 68px;
+    height: 66px;
+    box-shadow: 0 0 0px rgba(0, 0, 0);
+    
+}
+
+.cBtn:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0);
+}
+
+.imgBtn{
+   width: 68px;
+    height: 68px;
+    border: 1px solid black;
+}
+
+.containerChar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
